@@ -1,0 +1,95 @@
+ <tr>
+                <td colspan="2">tddddt</td>
+                <td colspan="3">Travelling</td>
+                <td colspan="3">Fooding</td>
+                <td colspan="2">Lodging</td>
+                <td colspan="2">Conveyance</td>
+                <td colspan="2">Others</td>
+                <td colspan="2">TOTAL</td>
+            </tr>
+            <tr>
+                <td>Mode</td>
+                <td>Amount</td>
+                <td>Verified Amount</td>
+                <!-- Fooding -->
+                <td></td>
+                <td> Amount</td>
+                <td>Verified Amount</td>
+                <!-- Lodging -->
+                <td> Amount</td>
+                <td>Verified Amount</td>
+                <!-- Conveyance -->
+                <td> Amount</td>
+                <td>Verified Amount</td>
+                <!-- Others -->
+                <td> Verified
+                    Amount</td>
+                <td>Claim
+                    Amount</td>
+                <!-- TOTAL -->
+                <td> Verified
+                    Amount</td>
+                <td>Claim
+                    Amount</td>
+            </tr>
+            <tr>
+                <td>2025-01-24</td>
+                <td>A</td>
+                <td>B</td>
+                <!-- Fooding -->
+                <td>Car</td>
+                <td>10.00</td>
+                <td>5</td>
+                <!-- Lodging -->
+                <td></td>
+                <td>18.00</td>
+                <!-- Conveyance -->
+                <td>8</td>
+                <td>15.00</td>
+                <!-- Others -->
+                <td>815.00</td>
+                <td>80</td>
+                <!-- total -->
+                <td>815.00</td>
+                <td>80</td>
+            </tr>
+            <!-- TOTAL amount  -->
+            <tr>
+                <td colspan="5">total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+                <td>total</td>
+            </tr>
+            <!-- TA Advance Payment -->
+            <tr>
+                <td colspan="14">TA Advance Payment</td>
+                <td>TA Advance Payment</td>
+                <td>TA Advance Payment</td>
+                <td>TA Advance Payment</td>
+                <td>TA Advance Payment</td>
+                <td>TA Advance Payment</td>
+                <td>TA Advance Payment</td>
+                <td>TA Advance Payment</td>
+                <td>TA Advance Payment</td>
+            </tr>
+            <!-- Sanctioned Verified Amount -->
+            <tr>
+                <td colspan="18">Sanctioned Verified Amount</td>
+                <td>Sanctioned Verified Amount</td>
+                <td>Sanctioned Verified Amount</td>
+                <td>Sanctioned Verified Amount</td>
+                <td>Sanctioned Verified Amount</td>
+            </tr>

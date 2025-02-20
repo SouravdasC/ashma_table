@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <table class="table table-bordered  table-responsive " id="printTable"> 
+        <tbody>
+          <tr>
+            <th colspan="12" style="text-align:center;">TOUR & TRAVEL EXPENSE SHEET</th>
+          </tr>
+         
+        
+          <tr>
+            <td colspan="6">Employee Code : AMS00009</td>
+            <td colspan="6">Designation : Sr. Executive</td>
+          </tr>
+          <tr>
+            <td colspan="6">Employee Name : CHANDAN DEY</td>
+            <td colspan="6">Posted Date & Time  : 02-01-2025 18:06:02 </td>
+          </tr>
+          <tr>
+            <td rowspan="3" align="center">Date</td>
+            <td rowspan="3" align="center">Place(From)</td>
+            <td rowspan="3" align="center">Place(To)</td>
+            <td colspan="7" align="center">EXPENSES DETAIL</td>
+            <td rowspan="3" align="center">Action <br>
+            <a onClick="addExp('210')" href="javascript:void(0);" title="Click here To Add"  data-toggle="modal" data-target="#myModaladd" > <i class="fa fa-plus" aria-hidden="true"></i> </a>
+            </td>
+           </tr>
+          <tr>
+            <!--<td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>-->
+            <td colspan="2">Travelling</td>
+            <td>Fooding</td>
+            <td>Lodging</td>
+            <td>Conveyance</td>
+            <td>Others</td>
+            <td>TOTAL</td>
+          </tr>
+          <tr>
+            <td>Mode</td>
+            <td>Amount</td>
+            <td>Amount</td>
+            <td>Amount</td>
+            <td>Amount</td>
+             <td>Amount</td>
+            <td>Amount</td>
+          </tr>
+                  <tr>
+             
+              <td>2024-12-03</td>
+              <td>BAIDYABATI</td>
+              <td>BANDEL</td>
+              <td>BIKE</td>
+              <td>0.00</td>
+              <td>70.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>70.00</td>
+              <td>
+              <a onClick="editExp('1031')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1031', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-04</td>
+              <td>BAIDYABATI</td>
+              <td>BEGUMPORE</td>
+              <td>BIKE</td>
+              <td>170.00</td>
+              <td>60.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>230.00</td>
+              <td>
+              <a onClick="editExp('1032')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1032', 'uploads/WhatsApp Image 2025-01-02 at 18.03.59.jpeg')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-05</td>
+              <td>BAIDYABATI</td>
+              <td>BAKURA</td>
+              <td>CAR</td>
+              <td>0.00</td>
+              <td>0.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>
+              <a onClick="editExp('1033')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1033', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-06</td>
+              <td>BAIDYABATI</td>
+              <td>BAKURA</td>
+              <td>CAR</td>
+              <td>0.00</td>
+              <td>0.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>
+              <a onClick="editExp('1034')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1034', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-10</td>
+              <td>BAIDYABATI</td>
+              <td>UTTARPARA</td>
+              <td>BIKE</td>
+              <td>250.00</td>
+              <td>100.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>350.00</td>
+              <td>
+              <a onClick="editExp('1035')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1035', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-11</td>
+              <td>BAIDYABATI</td>
+              <td>TAREKESWAR</td>
+              <td>BIKE</td>
+              <td>310.00</td>
+              <td>100.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>410.00</td>
+              <td>
+              <a onClick="editExp('1036')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1036', 'uploads/WhatsApp Image 2025-01-02 at 18.02.14.jpeg')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-12</td>
+              <td>BAIDYATI</td>
+              <td>MAGRA</td>
+              <td>BIKE</td>
+              <td>170.00</td>
+              <td>50.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>220.00</td>
+              <td>
+              <a onClick="editExp('1037')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1037', 'uploads/WhatsApp Image 2025-01-02 at 18.01.18.jpeg')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-14</td>
+              <td>BAIDYABATI</td>
+              <td>MOSAT</td>
+              <td>BIKE</td>
+              <td>0.00</td>
+              <td>100.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>100.00</td>
+              <td>
+              <a onClick="editExp('1038')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1038', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-16</td>
+              <td>BAIDYABTI</td>
+              <td>SEALDHA</td>
+              <td>TRAIN</td>
+              <td>0.00</td>
+              <td>100.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>30.00</td>
+              <td>130.00</td>
+              <td>
+              <a onClick="editExp('1039')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1039', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-17</td>
+              <td>SEALDHA</td>
+              <td>BALURGHAT</td>
+              <td>TRAIN</td>
+              <td>0.00</td>
+              <td>260.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>140.00</td>
+              <td>400.00</td>
+              <td>
+              <a onClick="editExp('1040')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1040', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-18</td>
+              <td>BALURGHAT</td>
+              <td>BUNIWADPUR</td>
+              <td>BUS</td>
+              <td>0.00</td>
+              <td>250.00</td>
+               <td>1300.00</td>
+              <td>0.00</td>
+              <td>180.00</td>
+              <td>1730.00</td>
+              <td>
+              <a onClick="editExp('1041')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1041', 'uploads/WhatsApp Image 2025-01-02 at 18.00.57.jpeg')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-19</td>
+              <td>BUNIWADPUR</td>
+              <td>MALDA TO NJP</td>
+              <td>BUS/ TRAIN</td>
+              <td>0.00</td>
+              <td>250.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>350.00</td>
+              <td>600.00</td>
+              <td>
+              <a onClick="editExp('1042')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1042', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-20</td>
+              <td>NJP</td>
+              <td>MALDA</td>
+              <td>CAR</td>
+              <td>0.00</td>
+              <td>0.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>
+              <a onClick="editExp('1043')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1043', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-23</td>
+              <td>BAIDYABATI</td>
+              <td>KALIPUR</td>
+              <td>BIKE</td>
+              <td>0.00</td>
+              <td>60.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>60.00</td>
+              <td>
+              <a onClick="editExp('1044')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1044', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-24</td>
+              <td>BAIDYABATI</td>
+              <td>UTTARPARA</td>
+              <td>BIKR</td>
+              <td>0.00</td>
+              <td>50.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>50.00</td>
+              <td>
+              <a onClick="editExp('1045')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1045', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-26</td>
+              <td>BAIDYABATI</td>
+              <td>JAGATBALLAVPUR</td>
+              <td>BIKE</td>
+              <td>200.00</td>
+              <td>100.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>300.00</td>
+              <td>
+              <a onClick="editExp('1046')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1046', 'uploads/WhatsApp Image 2025-01-02 at 18.01.43.jpeg')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-27</td>
+              <td>BAIDYABATI</td>
+              <td>TAREKESWAR</td>
+              <td>BIKE</td>
+              <td>0.00</td>
+              <td>0.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>
+              <a onClick="editExp('1047')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1047', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-28</td>
+              <td>BAIDYABATI</td>
+              <td>BANDEL</td>
+              <td>BIKE</td>
+              <td>150.00</td>
+              <td>50.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>200.00</td>
+              <td>
+              <a onClick="editExp('1048')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1048', 'uploads/WhatsApp Image 2025-01-02 at 18.02.52.jpeg')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2024-12-30</td>
+              <td>BAIDYABATI</td>
+              <td>MAGRA</td>
+              <td>BIKE</td>
+              <td>0.00</td>
+              <td>50.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>50.00</td>
+              <td>
+              <a onClick="editExp('1049')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1049', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                         <tr>
+             
+              <td>2025-01-31</td>
+              <td>BAIDYABATI</td>
+              <td>NALIKUL</td>
+              <td>BIKE</td>
+              <td>0.00</td>
+              <td>50.00</td>
+               <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>50.00</td>
+              <td>
+              <a onClick="editExp('1050')" href="javascript:void(0);" title="Click here for Edit"  data-toggle="modal" data-target="#myModaledit" style="margin-right: 10px;"> <i class="fa fa-pencil" aria-hidden="true"></i> </a>
+      
+      <a onClick="showImg('1050', 'uploads/')" href="javascript:void(0);" title="Click here to show" data-toggle="modal" data-target="#myModalEdit">
+          <i class="fas fa-file-invoice"></i>
+      </a>
+      
+              </td>
+              </tr>
+                 
+      
+      
+      
+      
+           <tr>
+              <th colspan="4" style="text-align:center;">TOTAL</th>
+              <th  style="text-align:center;">1,250.00</th>
+              <th  style="text-align:center;">1,700.00</th>
+             
+              <th  style="text-align:center;">1,300.00</th>
+               <th  style="text-align:center;">0.00</th>
+              <th  style="text-align:center;">700.00</th>
+              <th  style="text-align:center;">4,950.00</th>
+              <th></th>
+           </tr>
+          
+          
+          
+          
+        </tbody>
+      </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
